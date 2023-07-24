@@ -1,0 +1,632 @@
+/* Style for the container */
+.container {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+}
+
+/* Style for the "already have an account ?" text */
+.container p {
+  margin-top: 30px;
+  margin-left: 1400px;
+}
+
+/* Style for the "Login" button */
+.container button {
+  padding: 8px 16px;
+  background-color: #837a7a2f; /* Set the background color */
+  color: rgb(14, 13, 13); /* Set the text color */
+  border: none; /* Remove the default button border */
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/* Style the button on hover */
+.container button:hover {
+  background-color: #e4e27e; /* Change the background color on hover */
+}
+
+  .image-container {
+    width: 100%;
+    max-width: 800px; /* Adjust the width of the container to your preference */
+    overflow: hidden;
+    margin-left: 600px;
+  }
+  
+  .image-half {
+    position: relative; /* Added to allow absolute positioning inside */
+    width: 100%;
+    max-height: 42vh; /* Set the maximum height to show half of the image */
+    overflow: hidden;
+  }
+  
+  .image-half img {
+    width: 100%;
+  }
+  
+  .overlay {
+    position: absolute; /* Positioned absolutely within .image-half */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay img {
+    width: 35%; /* Adjust the size of the nested image */
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .overlay p {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .signup-form {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-left: 600px;
+  }
+  h4{
+    text-align: center;
+    font-size: 20px;
+   
+   
+   
+  }
+  h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    
+  }
+
+  .signup-form {
+   
+  }
+  
+  .le-input {
+    border: none;
+    margin-left: 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    padding: 8px 0;
+    width: 90%;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .le-input:focus {
+    outline: none;
+  }
+  
+  .name-input-container {
+    display: flex;
+    gap: 125px;
+    
+  }
+  
+  .name-input-group {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .name-input-group .controls {
+    position: relative; /* Set the position to allow absolute positioning for the pseudo-element */
+    padding: 8px 0;
+  }
+  
+  /* Add a pseudo-element to create the underline and adjust its length */
+  .name-input-group .controls::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Adjust this value to increase the underline length */
+    border-bottom: 1px solid #ccc;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-left: 50px;
+    font-weight: lighter;
+  }
+  .field-row {
+    position: relative; /* To make the password strength status absolute positioned relative to this container */
+  }
+  
+/* Your existing CSS styles */
+
+.field-row {
+  position: relative; /* To make the password strength status absolute positioned relative to this container */
+}
+
+#passwordStrength {
+  position: absolute;
+  right: 550px;
+  top: 760px;
+  margin-top: 10px; /* Add some vertical spacing between the input field and the status box */
+  background-color: rgb(225, 225, 225); /* Background color for the box */
+  padding: 5px 10px; /* Padding inside the box */
+  border-radius: 10px; /* Rounded corners for the box */
+  border: 1px solid #ccc; /* Border for the box */
+  color: white;
+}
+
+/* CSS styles for the extra line */
+.extra-line {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.extra-line::before {
+  content: 'Privacy Settings (OPTIONAL)';
+  position: absolute;
+  top: -10px; /* Adjust this value to control the vertical position of the text */
+  left: 18%;
+  transform: translateX(-50%);
+  background-color: #f7f7f7; /* Set background color to match container background */
+  padding: 0 10px; /* Add some spacing around the text */
+  font-size: 16px;
+  font-weight: lighter;
+}
+/* CSS styles for the extra line */
+#your-image {
+  /* Set the desired position properties */
+  position: absolute;
+  top: -50px; /* Adjust this value to control the vertical position */
+  left: 90%; /* Center the image horizontally */
+  transform: translateX(-50%);
+  overflow: hidden; /* This ensures the image is clipped to the border radius */
+  border: 0px solid #ccc;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+.profile-privacy {
+  margin: 5px; 
+  margin-left: 25px;
+  margin-top: 50px;
+  padding: 10px; /* Optional: Add padding for extra spacing inside the container */
+  border-radius: 5px; /* Optional: Add rounded corners for the container */
+  font-size: 18px; /* Optional: Set the font size */
+  font-weight: lighter; /* Optional: Set the font weight */
+  color: #464444; /* Optional: Set the text color */
+}
+.checkbox-container {
+  display: flex;
+  gap: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid rgba(179, 178, 178, 0.425); /* Add border around the checkbox group */
+  border-radius: 0px; /* Add rounded corners */
+  padding: 8px; /* Add padding to create some space between the border and the content */
+  background-color: rgba(179, 178, 178, 0.13);
+}
+
+/* Style the actual checkbox */
+.checkbox {
+  margin-right: 8px; /* Add some spacing between the checkbox and the text */
+  width: 14px; /* Increase the checkbox size */
+  height: 14px; /* Increase the checkbox size */
+  appearance: none; /* Remove default appearance */
+  outline: none; /* Remove outline on focus */
+  cursor: pointer; /* Show pointer cursor on hover */
+  position: relative;
+}
+
+.checkbox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(179, 178, 178, 0.425); /* Add border around the custom checkbox */
+  border-radius: 0px; /* Make the checkbox shape round */
+}
+
+/* Style the checkmark */
+.checkbox:checked::before {
+  background-color: gray; /* Fill the checkbox with gray when checked */
+}
+
+/* Remove default checkmark */
+.checkbox:checked::after {
+  content: '\2713'; /* Unicode character for a checkmark */
+  font-family: 'CustomTickFont';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white; /* Checkmark color is white */
+  display: block;
+}
+
+/* Remove default blue outline when clicking on the checkbox */
+.checkbox:focus + .checkbox-label::before {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Style when hovering over the checkbox label */
+.checkbox-label:hover {
+  background-color: #ffeeaa; /* Light yellow background on hover */
+  transform: scale(1.1); /* Increase size on hover */
+}
+.Social-Networks{
+  margin: 5px; 
+  margin-left: 25px;
+  padding: 10px; /* Optional: Add padding for extra spacing inside the container */
+  border-radius: 0px; /* Optional: Add rounded corners for the container */
+  font-size: 18px; /* Optional: Set the font size */
+  font-weight: lighter; /* Optional: Set the font weight */
+  color: #464444; /* Optional: Set the text color */
+}
+.social-icon {
+  width: 24px; /* Set the width of the social media icons */
+  height: 24px; /* Set the height of the social media icons */
+  margin-right: 8px; /* Add some spacing between the icon and the label text */
+}
+.extra-line-1 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.extra-line-1::before {
+  content: 'Small Survey (OPTIONAL';
+  position: absolute;
+  top: -10px; /* Adjust this value to control the vertical position of the text */
+  left: 18%;
+  transform: translateX(-50%);
+  background-color: #f7f7f7; /* Set background color to match container background */
+  padding: 0 10px; /* Add some spacing around the text */
+  font-size: 16px;
+  font-weight: lighter;
+}
+/* CSS styles for the extra line */
+#your-image-1 {
+  /* Set the desired position properties */
+  position: absolute;
+  top: -50px; /* Adjust this value to control the vertical position */
+  left: 90%; /* Center the image horizontally */
+  transform: translateX(-50%);
+  overflow: hidden; /* This ensures the image is clipped to the border radius */
+  border: 0px solid #ccc;
+  width: 90px; /* Adjust the width as needed */
+  height: 93px; /* Adjust the height as needed */
+}
+.badge {
+  position: absolute;
+  top: -70px; /* Adjust this value to control the vertical position of the badge */
+  left: calc(100% - 150px); /* Adjust this value to control the horizontal position of the badge */
+  padding: 5px 10px;
+  background-color:rgba(65, 64, 64, 0.404); /* Set the background color of the badge */
+  color: #fdfafa; /* Set the text color of the badge */
+  font-size: 12px;
+  border-radius: 5px;
+  width: 125px; /* Set the width of the badge */
+  height: 15px; /* Set the height of the badge */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden; /* Hide the badge by default */
+}
+
+/* Show the badge on hover */
+.image-container:hover .badge {
+  visibility: visible;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-inline label {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.form-inline select {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #464444;
+  padding: 5px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.form-inline select:last-child {
+  margin-left: 30px; 
+
+
+}
+#gender {
+  margin-left: 100px;
+}
+.form-inline select:focus, 
+.form-inline select:active {
+  outline: none; 
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #464444;
+}
+.form-inline label {
+ margin-left: 30px;
+  font-size: 16px; 
+  margin-bottom: 25px;
+}
+.form-inline label[for="gender"] {
+  margin-left: 100px;
+}
+
+hr[name="margin"] {
+  margin: 20px; /* Add a margin of 20px at the top and bottom */
+  border: none; /* Remove the default border */
+}
+hr[name="margin-1"] {
+  margin: 10px; /* Add a margin of 20px at the top and bottom */
+  border: none; /* Remove the default border */
+}
+.extra-line-2 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.extra-line-2::before {
+  content: 'Link Social Networks (OPTIONAL)';
+  position: absolute;
+  top: -10px; /* Adjust this value to control the vertical position of the text */
+  left: 18%;
+  transform: translateX(-50%);
+  background-color: #f7f7f7; /* Set background color to match container background */
+  padding: 0 10px; /* Add some spacing around the text */
+  font-size: 16px;
+  font-weight: lighter;
+  margin-left: 30px;
+}
+#your-image-2 {
+  /* Set the desired position properties */
+  position: absolute;
+  top: -50px; /* Adjust this value to control the vertical position */
+  left: 90%; /* Center the image horizontally */
+  transform: translateX(-50%);
+  overflow: hidden; /* This ensures the image is clipped to the border radius */
+  border: 0px solid #ccc;
+  width: 100px; /* Adjust the width as needed */
+  height: 90px; /* Adjust the height as needed */
+}
+hr[name="margin-2"] {
+  border-width: 1px;
+  border-color: black;
+  margin-left: 30px;
+  width: 300px;
+}
+hr[name="margin-3"] {
+  border-width: 1px;
+  border-color: black;
+  margin-left: 100px;
+  width: 300px;
+}
+hr[name="margin-4"] {
+ 
+margin-top: 50px;
+margin-bottom: 50px;
+font-weight: lighter;
+border-color: rgba(0, 0, 0, 0.24);
+}
+.themeforest-label {
+  position: relative; /* Set the position to relative */
+  left: 75px; /* Move the label 150px to the left */
+}
+.extra-line-3 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.extra-line-3::before {
+  content: 'Interested Categories (OPTIONAL)';
+  position: absolute;
+  top: -10px; /* Adjust this value to control the vertical position of the text */
+  left: 18%;
+  transform: translateX(-50%);
+  background-color: #f7f7f7; /* Set background color to match container background */
+  padding: 0 10px; /* Add some spacing around the text */
+  font-size: 16px;
+  font-weight: lighter;
+  margin-left: 30px;
+}
+
+/* ... (your existing CSS code) ... */
+
+.checkbox-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.checkbox-label-1 {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid rgba(179, 178, 178, 0.425);
+  background-image: linear-gradient(90deg, #ffeeaa 80%, rgb(253, 253, 253) 80%);
+  padding: 8px;
+  background-color: #ffeeaa;
+  width: 100px; /* Fixed width for the checkbox label */
+  height: 30px;
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+}
+
+.checkbox-1 {
+  margin-right: 8px;
+  width: 14px;
+  height: 14px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(179, 178, 178, 0.425);
+}
+
+.checkbox-1:checked::before {
+  background-color: rgb(255, 254, 254);
+}
+
+.checkbox-1:checked::after {
+  content: '\2713';
+  font-family: 'CustomTickFont';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  color: rgb(8, 8, 8);
+  display: block;
+}
+
+.checkbox-1:focus + .checkbox-label-1::before {
+  outline: none;
+  box-shadow: none;
+}
+
+.checkbox-label-1:hover {
+  background-color: #ffeeaa;
+  transform: scale(1.1);
+}
+
+/* Add styling for the checkbox container */
+.checkbox-container-2 {
+  display: flex;
+  gap: 20px;
+}
+
+/* Style for the checkbox labels */
+.checkbox-container-2 label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+}
+
+/* Style for the checkboxes */
+.checkbox-container-2 input[type="checkbox"] {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  /* Change the checkbox color to gray */
+  background-color: gray;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  appearance: none; /* Remove default checkbox styles */
+  outline: none; /* Remove focus outline */
+  cursor: pointer;
+  position: relative; /* Add relative positioning for ::after pseudo-element */
+}
+
+/* Style for the checked state */
+.checkbox-container-2 input[type="checkbox"]:checked {
+  /* Change the checked checkbox color to a darker shade of gray */
+  background-color: darkgray;
+}
+
+/* Add tick symbol to the checked state */
+.checkbox-container-2 input[type="checkbox"]:checked::after {
+  content: '\2713'; /* Unicode character for a checkmark */
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Style for the button */
+.create-account-button {
+  margin-top: 15px;
+  background-color: rgb(156, 23, 23); /* Set the background color to red */
+  color: white; /* Set the text color to white */
+  font-size: 18px; /* Set the font size */
+  padding: 12px 24px; /* Add padding to create some space around the text */
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Show pointer cursor on hover */
+  width: 680px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/* Style when hovering over the button */
+.create-account-button:hover {
+  opacity: 0.8; /* Reduce opacity on hover to give a visual feedback */
+}
+
+/* Style for the footer */
+.footer {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+/* Style for the footer links */
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+}
+
+/* Style for the social media icons */
+.social-media-icons a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Style the social media icons (assuming they are images) */
+.social-media-icons img {
+  width: 24px;
+  height: 24px;
+}
+

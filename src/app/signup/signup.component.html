@@ -1,0 +1,325 @@
+<div class="container">
+    <p>already have an account ?</p>
+    <div>
+      <button (click)="signIn()">Sign in</button>
+    </div>
+  </div>
+  <div class="image-container">
+    <div class="image-half">
+      <img src="../assets/image/IconBackground.png" alt="Your Image">
+      <div class="overlay">
+        <img src="../assets/image/EFARegisteredLogo - Copy.png" alt="Nested Image">
+        <h3>Create an Emotional First Aid - Enabler Account</h3>
+           <h4>By signing up, you can start posting, replying to topics, earn badges,
+            <br> favorite, vote topics, and many more.</h4> 
+      </div>
+    </div>
+  </div>
+  
+  <div class="signup-form">
+    <h2>Sign Up</h2>
+    <form role="form" class="register-form cf-style-1">
+      <div class="name-input-container">
+        <div class="control-group">
+          <label class="control-label">First Name</label>
+          <div class="controls">
+            <input type="text" class="le-input" placeholder="First Name" required>
+          </div>
+        </div>
+  
+        <div class="control-group">
+          <label class="control-label">Last Name</label>
+          <div class="controls">
+            <input type="text" class="le-input" placeholder="Last Name" required>
+          </div>
+        </div>
+      </div>
+  
+      <div class="field-row">
+        <label>Email</label>
+        <input type="email" class="le-input" placeholder="Email Address" required>
+      </div>
+  
+      <div class="field-row">
+        <label>Password</label>
+        <input type="password" class="le-input" (input)="updatePasswordStrength($event)" placeholder="Password" required>
+      </div>
+      <div [style.backgroundColor]="passwordStrengthColor" id="passwordStrength">{{ passwordStrengthText }}</div>
+      <div class="extra-line">
+        <div class="extra-line-text"></div>
+        <img id="your-image" src="..\assets\image\Newbie.png" alt="Your Image">
+      </div>
+      <div class="profile-privacy">
+        <p>Who can see my Profile?</p>
+      </div>      
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span>
+          Everyone
+        </label>
+      
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span>
+          Only Friends
+        </label>
+      
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span>
+          Invite Only
+        </label>
+      </div>
+      <div class="Social-Networks">
+        <p>Automatically share my posts and replies on Social Networks</p>
+      </div> 
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span>
+          <img src="..\assets\image\facebook.png" alt="facebook" class="social-icon">
+          Facebook
+        </label>
+      
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span>
+          <img src="..\assets\image\twitter.png" alt="twitter" class="social-icon">
+          Twitter
+        </label>
+      
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span>
+          <img src="..\assets\image\4844429.png" alt="Google+" class="social-icon">
+          Google+
+        </label>
+      </div>
+      <div class="extra-line-1">
+        <div class="extra-line-text-1"></div>
+        <div class="image-container">
+          <img id="your-image-1" src="../assets/image/Messenger.png" alt="Your Image">
+          <span class="badge">fill to earn this badge</span>
+        </div>
+      </div>
+      <div class="form-inline">
+        <div class="line-break">
+          <label for="age">How old are you?</label>
+          <hr name="margin-1">
+          <select id="age" name="age">
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select>
+        </div>
+      
+        <div class="line-break">
+          <label for="gender"> Who are you?</label>
+          <hr name="margin-1">
+          <select id="gender" name="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <hr name="margin">
+      <div class="form-inline">
+        <div class="line-break">
+          <label for="friendly">Will you be friendly here?</label>
+          <hr name="margin-1">
+          <select id="select" name="select">
+            <option value="select">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      
+        <div class="line-break">
+          <label for="gender"> Where do you heard about us?</label>
+          <hr name="margin-1">
+          <select id="gender" name="gender">
+            <option value="Engine">By Search Engine</option>
+            <option value="facebook">By Facebook</option>
+            <option value="instagram">By instagram</option>
+            <option value="other">By Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="extra-line-2">
+        <div class="extra-line-text-2"></div>
+        <img id="your-image-2" src="..\assets\image\Iwrotethis.png" alt="Your Image-2">
+      </div>
+      <div class="form-inline">
+        <div class="line-break">
+          <label for="facebook">
+          <img src="..\assets\image\facebook.png" alt="facebook" class="social-icon">facebook URL</label>
+          <hr name="margin-1">
+          <label for="">facebook.com/Azyrus-themes</label>
+          <hr name="margin-2">
+        </div>
+        <div class="line-break">
+          <label for="gender" name="social-icon-label">
+          <img src="..\assets\image\twitter.png" alt="facebook" class="social-icon">Twitter Username</label>
+          <hr name="margin-1">
+          <label for="themes" class="themeforest-label">themeforest</label>
+          <hr name="margin-3">
+        </div>
+      </div>
+      <hr name="margin">
+      <div class="form-inline">
+        <div class="line-break">
+          <label for="facebook">
+          <img src="..\assets\image\4844429.png" alt="facebook" class="social-icon">Google+ Account ID</label>
+          <hr name="margin-1">
+          <label for="">azyrus_themes</label>
+          <hr name="margin-2">
+        </div>
+        <div class="line-break">
+          <label for="gender" name="social-icon-label">
+          <img src="..\assets\image\youtube.png" alt="facebook" class="social-icon">Youtube Channel URL</label>
+          <hr name="margin-1">
+          <label for="themes" class="themeforest-label">azyrusthemes</label>
+          <hr name="margin-3">
+        </div>
+      </div>
+      <div class="extra-line-3">
+        <div class="extra-line-text-3"></div>
+      </div>
+      <div class="Social-Networks">
+        <p>Categories I'm interested in</p>
+      </div> 
+      <div class="checkbox-container-1">
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Select All
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Mental Health
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          MH Tips
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Support
+        </label>
+      </div>
+      <hr name="margin">
+      <div class="checkbox-container-1">
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Enabler
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Exchange
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Art
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Q&As
+        </label>
+      </div>
+      <hr name="margin">
+      <div class="checkbox-container-1">
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Social
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Random
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Music
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Science
+        </label>
+      </div>
+      <hr name="margin">
+      <div class="checkbox-container-1">
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Pets
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Eduction
+        </label>
+      
+        <label class="checkbox-label-1">
+          <input type="checkbox" class="checkbox-1">
+          <span class="checkmark-1"></span>
+          Video      
+        </label>
+      </div>
+      <hr name="margin-4">
+      <div class="checkbox-container-2">
+        <label for="checkbox1">
+          <input type="checkbox" id="checkbox1" name="checkbox1">
+          I agree to the Terms & Conditions
+        </label>
+      
+        <label for="checkbox2">
+          <input type="checkbox" id="checkbox2" name="checkbox2">
+          Subscribe to newsletter
+        </label>
+      </div>
+      <hr name="margin-1">
+      <div>
+        <button class="create-account-button" (click)="signIn()">Create New Account</button>
+      </div>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="footer-links">
+      <a >Terms</a>
+      <a >Privacy</a>
+      <a >Send Feedback</a>
+    </div>
+    <div class="social-media-icons">
+      <a  class="social-icon"><img src="..\assets\image\Fb.png" alt="Facebook"></a>
+      <a  class="social-icon"><img src="..\assets\image\Twb.png" alt="Twitter"></a>
+      <a  class="social-icon"><img src="..\assets\image\G+.png" alt="Google+"></a>
+      <a  class="social-icon"><img src="..\assets\image\dr.png" alt="Facebook"></a>
+      <a  class="social-icon"><img src="..\assets\image\could.png" alt="Twitter"></a>
+      <a  class="social-icon"><img src="..\assets\image\media.png" alt="Instagram"></a>
+    </div>
+  </footer>
+  
+  

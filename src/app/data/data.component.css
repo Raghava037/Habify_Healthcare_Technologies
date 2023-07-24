@@ -1,0 +1,448 @@
+/* Your other CSS styles */
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 25px;
+  }
+  
+  .logo {
+    margin-left: 300px;
+    margin-right: -100px;
+
+  }
+  .logo img{
+    width: 50%;
+  }
+  
+  .vertical-line {
+    width: 1px;
+    height: 70px;
+    background-color: #333;
+    margin: 0 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-color: transparent;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 300px;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  .search-bar img{
+    width: 13%;
+  }
+  
+  .topic-dropdown,
+  .latest-topic-menu,
+  .mail-dropdown {
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .topic-dropdown select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 200px;
+  }
+.latest-topic-menu select {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background: transparent; 
+    border: none; /* Remove borders */
+    outline: none; /* Remove focus outline */
+    padding: 5px; /* Add padding to make the select box visually distinguishable */
+   font-size: 18px;
+   font-family: sans-serif;
+  }
+  .custom-select-trigger {
+    font-size: 20px; 
+    font-weight: bold;
+  }
+  .latest-topic-menu .custom-select select {
+    display: inline-block;
+    width: auto;
+  }
+  .latest-topic-menu select {
+    background-color:transparent;
+  }
+  
+
+.bell-icon-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .bell-icon {
+    width: 30px; /* Set the desired width for the bell icon image */
+    height: 30px; /* Set the desired height for the bell icon image */
+  }
+  .bell-icon-container img{
+    width: 50%;
+   
+  }
+  
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: 45px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 20%;
+  }
+  
+  .latest-topic-menu ul,
+  .mail-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mail-dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .mail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    background-color: #040275;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  .mail-dropdown select{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+
+  .filter-form{
+
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+.filter-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .category-dropdown,
+  .tags-dropdown,
+  .filters-text {
+    margin-right: 20px;
+  }
+
+
+
+.category-dropdown select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: #333;
+    width: 150px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 290px;
+  }
+  
+  .category-dropdown select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+  }
+  .tags-dropdown select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: #333;
+    width: 100px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tags-dropdown select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+  }
+  
+  .tags-dropdown label {
+    margin-right: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .filters-text span {
+    margin-right: 10px;
+  }
+
+.filters-text a {
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent; /* Add a transparent bottom border initially */
+    transition: border-color 0.3s; /* Add transition to smoothly change the border color on hover */
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  .filters-text a:hover {
+    border-color: #f1c40f; 
+  }
+  
+  .horizontal-line {
+    border: none; 
+    border-top: 1px solid #ccc; /* Set the border style for the horizontal line */
+    margin: 20px 0;
+    width: 100%;
+  }
+  .under-1{
+    margin-left: 310px;
+    margin-top: -30px;
+    margin-right: 300px;
+  }
+  .mail-icon-2 {
+    display: inline-flex; /* Display mail icons inline with flexbox */
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px; /* Set font size for mail icons */
+    margin-right: 10px; /* Add margin between mail icons */
+    font-family: sans-serif;
+  }
+  .category p {
+    margin: 0; /* Remove default margin for paragraphs */
+  }
+  .category {
+    white-space: nowrap; /* Prevent line breaks */
+  }
+    
+  .category > div {
+    display: inline-block; /* Display child divs inline */
+    vertical-align: middle; /* Align divs vertically in the middle */
+  }
+  .color-box {
+    display: inline-flex; /* Use flexbox to display the paragraphs inline */
+    align-items: center; /* Vertically center the paragraphs */
+    padding: 10px; /* Add padding to the box */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+  }
+  
+  .color-box p {
+    margin: 0; /* Remove default margin for paragraphs */
+    color: #fff; /* Set text color to white */
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-right: 10px; /* Add margin between paragraphs */
+  }
+  .container {
+  display: flex; /* Use flexbox to align items in a row */
+}
+
+.category, .color-box {
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Vertically center the items */
+  margin-right: 10px; /* Add right margin between the divs */
+  padding-left: 2px;
+  
+}
+
+.color-box p {
+  margin: 0; /* Remove default margin for paragraphs */
+  border-radius: 3px;
+  font-size: 16px;
+}
+.form-container {
+    width: 1100px; /* Set a fixed width for the container */
+    height: 450px; /* Set a fixed height for the container */
+    overflow-x: hidden;
+  }
+.form-container {
+      overflow-y: auto;
+      max-height: 410px; /* Set the maximum height of the .form-container */
+      padding-right: 200px; /* Add spacing around the form */
+      padding-top: -150px;
+      position: relative; /* Ensure proper positioning of the scrollbar */
+    }
+
+    /* For WebKit (Chrome, Safari, and newer versions of Edge) */
+    .form-container::-webkit-scrollbar {
+      width: 4px; /* Set the width of the scrollbar */
+    }
+
+    .form-container::-webkit-scrollbar-track {
+      background-color: #f1f1f1; /* Set the background color of the track */
+    }
+
+    .form-container::-webkit-scrollbar-thumb {
+      background-color: orange; /* Set the color of the thumb to yellow */
+      height: 5px; /* Set the height of the scrollbar thumb to 20px */
+      width: 4px; /* Set the width of the scrollbar thumb to 4px */
+    }
+
+    /* For Mozilla Firefox */
+    .form-container::-moz-scrollbar {
+      width: 4px; /* Set the width of the scrollbar */
+    }
+
+    .form-container::-moz-scrollbar-track {
+      background-color: #f1f1f1; /* Set the background color of the track */
+    }
+
+    .form-container::-moz-scrollbar-thumb {
+      background-color: orange; /* Set the color of the thumb to yellow */
+      width: 4px; /* Set the width of the scrollbar thumb to 4px */
+      height: 20px; /* Set the height of the scrollbar thumb to 20px */
+    }
+  
+  .child-form{
+
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    display: flex;
+      align-items: center;
+  }
+  .mail-icons-container-1 {
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  .mail-icon-1 {
+    display: inline-flex; /* Display mail icons inline with flexbox */
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:transparent;
+    color: #fff;
+    font-size: 18px; /* Set font size for mail icons */
+    margin-right: 10px; /* Add margin between mail icons */
+    font-family: sans-serif;
+  }
+  .container {
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  .mail-icon-1, div {
+    display: inline-block; /* Use inline-block to align elements in a row */
+    vertical-align: middle; /* Vertically align the elements */
+  }
+  .container {
+    display: flex; /* Use flexbox to align elements in a row */
+    align-items: center; /* Vertically center the elements */
+  }
+  
+  .mail-icon-1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #186908;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px; /* Add right margin between the elements */
+  }
+  
+  div {
+    font-size: 20px;
+  }
+  .rec-box {
+    width: 650px; 
+    height: 150px; /* Set the height of the box */
+    background-color: #7336e4a6; /* Set the gray color */
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .container-1 {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  .text-with-image {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+/* Style for the popup container */
+.popup {
+    display: none; /* Hide the popup by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for blurring effect */
+    z-index: 1;
+  }
+  
+  /* Style for the popup content */
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* Style for the close button in the popup */
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  
+  

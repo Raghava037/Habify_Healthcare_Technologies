@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page in HTML with CSS Code Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="styles.css"> Create a separate CSS file (styles.css) for the custom styles -->
+</head>
+<body>
+  <div class="box-form">
+    <div class="left">
+      <div class="overlay">
+        <h1>Hello World.</h1>
+        <p>Show us you've got the rare gift of being a listener to someone in need.</p>
+        <span>
+          <p>Login with social media</p>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Login with Twitter</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="right">
+        <h5>Signin</h5>
+        <p>Don't have an account? <a href="/signup">Create Your Account</a> - it takes less than a minute</p>
+        <div class="inputs">
+          <input type="text" placeholder="Username" [(ngModel)]="username">
+          <br>
+          <input type="password" placeholder="Password" [(ngModel)]="password">
+        </div>
+      
+        <div class="remember-me--forget-password">
+          <label>
+            <input type="checkbox" name="item">
+            <span class="text-checkbox">Remember me</span>
+          </label>
+          <p>Forgot password?</p>
+        </div>
+      
+        <br>
+        <button (click)="onLogin()">Signin</button>
+      </div>
+  </div>
+  
+</body>
+</html>

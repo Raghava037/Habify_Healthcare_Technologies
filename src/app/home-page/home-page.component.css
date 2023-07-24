@@ -1,0 +1,466 @@
+/* Your other CSS styles */
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 25px;
+  }
+  
+  .logo {
+    margin-left: 300px;
+    margin-right: -100px;
+
+  }
+  .logo img{
+    width: 50%;
+  }
+  
+  .vertical-line {
+    width: 1px;
+    height: 70px;
+    background-color: #333;
+    margin: 0 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-color: transparent;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 300px;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  .search-bar img{
+    width: 13%;
+  }
+  
+  .topic-dropdown,
+  .latest-topic-menu,
+  .mail-dropdown {
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .topic-dropdown select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 200px;
+  }
+.latest-topic-menu select {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background: transparent; 
+    border: none; /* Remove borders */
+    outline: none; /* Remove focus outline */
+    padding: 5px; /* Add padding to make the select box visually distinguishable */
+   font-size: 18px;
+   font-family: sans-serif;
+  }
+  .custom-select-trigger {
+    font-size: 20px; 
+    font-weight: bold;
+  }
+  .latest-topic-menu .custom-select select {
+    display: inline-block;
+    width: auto;
+  }
+  .latest-topic-menu select {
+    background-color:transparent;
+  }
+  
+
+.bell-icon-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .bell-icon {
+    width: 30px; /* Set the desired width for the bell icon image */
+    height: 30px; /* Set the desired height for the bell icon image */
+  }
+  .bell-icon-container img{
+    width: 50%;
+   
+  }
+  
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: 45px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 20%;
+  }
+  
+  .latest-topic-menu ul,
+  .mail-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mail-dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .mail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    background-color: #040275;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  .mail-dropdown select{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+
+  .filter-form{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 50px;
+  
+  background-color: #f7f7f7;
+  margin-left: 200px;
+}
+.filter-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .category-dropdown,
+  .tags-dropdown,
+  .filters-text {
+    margin-right: 20px;
+  }
+
+
+
+.category-dropdown select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: #333;
+    width: 150px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 80px;
+  }
+  
+  .category-dropdown select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+  }
+  .tags-dropdown select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: #333;
+    width: 100px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tags-dropdown select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+  }
+  
+  .tags-dropdown label {
+    margin-right: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .filters-text span {
+    margin-right: 10px;
+  }
+
+.filters-text a {
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent; /* Add a transparent bottom border initially */
+    transition: border-color 0.3s; /* Add transition to smoothly change the border color on hover */
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  .filters-text a:hover {
+    border-color: #f1c40f; 
+  }
+  
+  .horizontal-line {
+    border: none; 
+    border-top: 1px solid #ccc; /* Set the border style for the horizontal line */
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .heading-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  
+  .text-1 {
+    flex-basis: 20%;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 500px;
+  }
+  .text-2 {
+    flex-basis: 20%;
+    text-align: left;
+    padding-left: 150px;
+  }
+  .text-3 {
+    flex-basis: 20%;
+    text-align: left;
+    padding-left: 100px;
+  }
+  hr[name="under-1"]{
+    width: 1350px;
+    margin: 0px;
+    margin-left: 300px;
+  }
+  .box-1 img{
+    width: 30px;
+  }
+  .para-1{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .para-2{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #555;
+  }
+  .box-1{
+    margin-left: 70px;
+    margin-top: 10px;
+    background-color: rgba(255, 99, 71, 0.493);
+    padding: 20px;
+  }
+  .mail-icons-container-1 {
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  .mail-icon-1 {
+    display: inline-flex; /* Display mail icons inline with flexbox */
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:transparent;
+    color: #fff;
+    font-size: 18px; /* Set font size for mail icons */
+    margin-right: 10px; /* Add margin between mail icons */
+    font-family: sans-serif;
+  }
+  
+  .box-1 {
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  .box-1 > div {
+    display: inline-block; /* Display child divs inline */
+    margin-right: 10px; /* Add margin between child divs */
+  }
+  
+  .paras p {
+    margin: 0; /* Remove default margin for paragraphs */
+  }
+  
+  .mail-icons-container-1 {
+    font-size: 10px; 
+    margin-left: 350px;
+  }
+  .replies{
+    margin-left: 80px;
+  }
+  .Views{
+    margin-left: 100px;
+    font-weight: lighter;
+  }
+  .actives{
+    margin-left: 80px;
+    font-weight: lighter;
+    margin-right: -200px;
+  }
+  .box-2{
+    margin-left: 70px;
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 20px;
+  }
+  .box-2 > div {
+    display: inline-block; /* Display child divs inline */
+    margin-right: 10px; /* Add margin between child divs */
+  }
+  .para-3{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .mail-icon-2 {
+    display: inline-flex; /* Display mail icons inline with flexbox */
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px; /* Set font size for mail icons */
+    margin-right: 10px; /* Add margin between mail icons */
+    font-family: sans-serif;
+  }
+  .category p {
+    margin: 0; /* Remove default margin for paragraphs */
+  }
+  .category {
+    white-space: nowrap; /* Prevent line breaks */
+
+  }
+  
+  .category > div {
+    display: inline-block; /* Display child divs inline */
+    vertical-align: middle; /* Align divs vertically in the middle */
+  }
+  .box-3{
+    margin-left: 70px;
+    background-color: rgba(119, 119, 119, 0.212);
+    padding: 20px;
+  }
+  .box-3 > div {
+    display: inline-block; /* Display child divs inline */
+    margin-right: 10px; /* Add margin between child divs */
+  }
+  .color-box {
+    display: inline-flex; /* Use flexbox to display the paragraphs inline */
+    align-items: center; /* Vertically center the paragraphs */
+    padding: 10px; /* Add padding to the box */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+  }
+  
+  .color-box p {
+    margin: 0; /* Remove default margin for paragraphs */
+    color: #fff; /* Set text color to white */
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-right: 10px; /* Add margin between paragraphs */
+    border-radius: 3px;
+  }
+  
+  .lock{
+    width: 15px;
+        display: inline-block; /* Display the image inline */
+        vertical-align: middle; /* Align the image vertically in the middle */
+        margin-right: 15px;
+  }
+  .para-3 {
+    display: inline-block; /* Display the paragraph inline */
+  }
+
+  footer {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Vertically center the items */
+    margin-top: 1000px;
+  }
+  
+  .footer img {
+    display: inline-block; /* Display the logo inline */
+    vertical-align: middle; /* Align the logo vertically in the middle */
+    width: 20%;
+    margin-left: 300px;
+  }
+  
+  div {
+    display: inline-block; /* Display the divs inline */
+  }
+  
+  div a {
+    margin-right: 20px; /* Add right margin between the anchor tags */
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+  }
+.text-footer{
+    margin-left: -120px;
+}
+.footer-hr{
+    margin-left: 400px;
+    width: 1350px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #33333383;
+    font-size: 14px;
+  }
+  
+  /* Style for the social media icons */
+  .social-media-icons a {
+    display: inline-block;
+    margin: -7px;
+  }
+  
+  /* Style the social media icons (assuming they are images) */
+  .social-media-icons img {
+    width: 40%;
+    margin: 1px;
+    margin-right: -10px;
+  }
+  
+  
